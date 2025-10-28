@@ -1,6 +1,26 @@
 /* nav */
-.container-fluid{
-    display: flex;
-    justify-content: center !important;
-    background-color: aqua;
+.gp{
+    gap: 40px;
+}
+.BTN-1{
+    background-color: #28d1eb;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding: 5px;
+}
+.BTN-1:hover{
+    background-color: #17a2b8;
+
+}
+.nav-item{
+    font-size: 1.3em;
+}
+i{
+    font-size: 1.1em
 }
