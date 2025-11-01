@@ -1,4 +1,9 @@
 /* nav */
+.navbar{
+    position: sticky;
+    z-index: 10;
+
+}
 .gp{
     gap: 40px;
 }
@@ -11,7 +16,7 @@
     border-radius: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.3em;
-    font-weight: 500;
+    font-weight: 500;navbar
     padding: 5px;
 }
 .BTN-1:hover{
@@ -23,4 +28,85 @@
 }
 i{
     font-size: 1.1em
+}
+/* hero section */
+/* full-screen iframe background */
+.bg-iframe {
+    width: 95%;
+    height: 90%;
+   position: fixed;
+display: flex;
+justify-content: center;
+  top: auto;
+
+  pointer-events: none;   iframe pe clicks nahi jaayenge, taake button/text clickable rahe 
+  z-index: -1;
+  border: 0;
+}
+
+/* overlay to darken video for text readability */
+.video-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+/* hero content sits above the iframe+overlay and remains clickable */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+/* make sure buttons/links work (pointer-events on content are normal) */
+.hero-content * { pointer-events: auto; }
+.bg-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full screen height */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+
+/* .overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.video-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3); /* dark overlay for contrast */
+.h1{
+  color: #212324 !important;
+ font-size: 4em;
+  text-align: center;
 }

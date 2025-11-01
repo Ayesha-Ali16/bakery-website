@@ -7,48 +7,116 @@
    
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
      <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <!-- nav start -->
 <nav class="navbar navbar-expand-lg bg-light py-3">
-  <div class="container-fluid d-flex justify-content-around align-items-center flex-wrap">
-
-    <!-- Logo -->
+  <div class="container-fluid">
+    
+    <!-- Logo (always visible) -->
     <a class="navbar-brand" href="#">
-      <img src="images/logo.png" alt="logo" style="height:150px;">
+      <img src="images/logo.png" alt="logo" style="height: 150px;">
     </a>
 
-    <!-- Links -->
-    <ul class="navbar-nav d-flex flex-row mb-0">
-      <li class="nav-item mx-3">
-        <a class="nav-link active" href="#">Home</a>
-      </li>
-      <li class="nav-item mx-3">
-        <a class="nav-link" href="#">Menu</a>
-      </li>
-      <li class="nav-item mx-3">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item mx-3">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-    </ul>
+    <!-- Toggler (for mobile view) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <!-- Social Icons -->
-    <div class="d-flex align-items-center gp ">
-      <a href="#" class="text-dark fs-5"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#" class="text-dark fs-5"><i class="fa-brands fa-square-facebook"></i></a>
-      <a href="#" class="text-dark fs-5"><i class="fa-brands fa-twitter"></i></a>
+    <!-- Collapse part -->
+    <div class="collapse navbar-collapse justify-content-around align-items-center" id="navbarContent">
+
+      <!-- Links -->
+      <ul class="navbar-nav d-flex flex-row mb-0">
+        <li class="nav-item mx-3">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Icons -->
+      <div class="d-flex align-items-center gp">
+        <a href="#" class="text-dark fs-5"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="text-dark fs-5"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#" class="text-dark fs-5"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+      <!-- Button -->
+      <button class="btn btn-outline-success BTN-1" type="button">Order Now</button>
+
     </div>
-
-    <!-- Button -->
-    <button class="btn btn-outline-success BTN-1" type="button">MAKE AN ORDER</button>
-
   </div>
 </nav>
 <!-- nav end -->
- 
-  
+
+  <!-- hero section -->
+   <section class="video-section">
+    <div>
+   <div class="video-container">
+   <iframe  class="bg-iframe" src="https://www.youtube.com/embed/HTXB6flODww?si=DdjN4o33mEVRxSEI"
+  frameborder="0" 
+  frameborder="0" 
+  allow="autoplay; fullscreen" 
+  allowfullscreeN></iframe>
+ </div>
+  <!-- Text + Button (center of screen) -->
+  <div class="hero-content">
+    <h1 class="display-3 fw-bold">Welcome to My Website</h1>
+    <p class="lead">Create beautiful designs with Bootstrap and video backgrounds.</p>
+    <button class="btn btn-primary btn-lg mt-3">Get Started</button>
+  </div>
+  </0div>
+</section>
+<section class="2">
+  <h1 class="h1"> Bootstrap heading</h1>
+  <div class="container py-4">
+  <!-- Row 1: 3 images -->
+  <div class="row g-3">
+    <div class="col-12 col-md-4">
+      <div class="img-card">
+        <img src="images/pic1.jpg" class="img-fluid  object-fit-cover" alt="Image 1">
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="img-card">
+        <img src="images/pic1.jpg" class="img-fluid  object-fit-cover" alt="Image 2">
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="img-card">
+        <img src="images/pic1.jpg" class="img-fluid object-fit-cover" alt="Image 3">
+      </div>
+    </div>
+
+    <!-- Row 2: next 3 images -->
+    <div class="col-12 col-md-4">
+      <div class="img-card">
+        <img src="images/pic1.jpg" class="img-fluid object-fit-cover" alt="Image 4">
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="img-card">
+        <img src="images/pic1.jpg
+        " class="img-fluid  object-fit-cover" alt="Image 5">
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="img-card">
+        <img src="images/pic1.jpg" class="img-fluid object-fit-cover" alt="Image 6">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 </body>
 </html>
