@@ -110,3 +110,41 @@ justify-content: center;
  font-size: 4em;
   text-align: center;
 }
+/*sec 3  */
+.sec3 {
+  background-color:rgb(95, 202, 199);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  ;
+  
+}
+.box1{
+
+  width: 80%;
+  margin: 0 auto;
+  height: 80%;
+
+  border-color: #212324;
+  border: 5px solid rgb(241, 235, 235);
+}
+.box1 i{
+  color:white;
+  text-align: center;
+  font-size:5em;
+  padding-bottom: 45px;
+}
+.box1 h1 {
+font-size: 3em;
+color: white;
+}
+.box1 p{
+font-size: 1.3em;
+color:white;
+}
+.box1 button{
+  background-color:rgb(95, 202, 199) ;
+  border-color: beige;
+}
