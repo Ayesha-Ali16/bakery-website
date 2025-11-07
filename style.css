@@ -31,7 +31,7 @@ i{
 }
 /* hero section */
 /* full-screen iframe background */
-.bg-iframe {
+video {
     width: 95%;
     height: 90%;
    position: fixed;
@@ -68,19 +68,19 @@ justify-content: center;
 
 /* make sure buttons/links work (pointer-events on content are normal) */
 .hero-content * { pointer-events: auto; }
-.bg-video{
+video{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.video-section {
+video {
   position: relative;
   width: 100%;
   height: 100vh; /* full screen height */
   overflow: hidden;
 }
 
-.video-container iframe {
+.video-container video {
   position: absolute;
   top: 0;
   left: 0;
@@ -148,3 +148,85 @@ color:white;
   background-color:rgb(95, 202, 199) ;
   border-color: beige;
 }
+.content {
+text-align: center;
+padding: 30px;
+}
+.content i{
+  font-size: 5em;
+  color: palevioletred;
+}
+.content h1{
+  color: #212324;
+  font-size: 3.5em;
+  margin-top: 40px;
+}
+
+  .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .ingredients {
+      font-size: 2rem;
+      line-height: 1.1;
+      color: #212324;
+    }
+
+    .recipe-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 20px auto;
+      display: block;
+    }
+ /* Background and overlay */
+    .testimonials-section {
+      background: url('your-background.jpg') center/cover no-repeat;
+      position: relative;
+      color: white;
+      padding: 100px 0;
+    }
+
+    .testimonials-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 99, 132, 0.7); /* Pink overlay */
+      z-index: 0;
+    }
+
+    .testimonials-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .testimonial {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .testimonial img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .testimonial p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .testimonial h5 {
+      margin-top: 8px;
+      font-weight: 600;
+    }
+
+    .testimonial small {
+      color: #ddd;
+    }
+  
