@@ -229,4 +229,40 @@ padding: 30px;
     .testimonial small {
       color: #ddd;
     }
-  
+     h1 {
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    table th {
+      color: #9aa0a6;
+      font-weight: 600;
+    }
+    table{
+  border-collapse: collapse;
+    }
+
+    table td, table th {
+      padding: 15px 10px;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .contact-box {
+      background-color: #f6f8f8;
+      border-radius: 10px;
+      padding: 25px;
+    }
+
+    .contact-box h4 {
+      font-weight: 600;
+      color: #333;
+    }
+
+    .contact-box p {
+      color: #3a7c7c;
+    }
+
+    .contact-box span {
+      color: #3ac1b8;
+      font-weight: 500;
+    }
