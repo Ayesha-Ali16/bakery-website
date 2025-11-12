@@ -243,7 +243,7 @@ padding: 30px;
     }
 
     table td, table th {
-      padding: 15px 10px;
+      padding: 100px 10px;
       border-bottom: 1px solid #eaeaea;
     }
 
@@ -266,3 +266,100 @@ padding: 30px;
       color: #3ac1b8;
       font-weight: 500;
     }
+  .newsletter-section {
+      background: url('images/i') center/cover no-repeat;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Dark overlay for contrast */
+    .newsletter-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: 1;
+    }
+
+    .newsletter-content {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+      width: 90%;
+    }
+
+    .newsletter-input {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .newsletter-input input {
+      flex: 1;
+      border-radius: 50px;
+      border: none;
+      padding: 12px 20px;
+      outline: none;
+    }
+
+    .newsletter-input button {
+      border-radius: 50px;
+      padding: 12px 25px;
+      background: #36d1dc;
+      border: none;
+      color: white;
+      font-weight: 600;
+    }
+
+    .social-icons {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 20px;
+      border: 2px solid white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background: white;
+      color: #36d1dc;
+    }
+    
+footer {
+  background-color: #222; /* dark grey */
+  width: 100vw;
+  height: auto;
+}
+
+footer a:hover {
+  color: #ffb6b6; /* light pink hover */
+}
+.list-inline-item{
+  font-size: 1.5em;
+}
+.order-link {
+  font-size: 1.5em;
+  color: #ffeeee;
+}
+.small{
+  color: #ddd;
+}
